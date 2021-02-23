@@ -36,7 +36,7 @@ do
     echo Time : `date +"%H:%M:%S"`
 
 
-    ### Fix ploidy issue (fix by replacing single "." GT with "./.")
+    ### Fix ploidy issue (fix by replacing single "." GT with "./.") ###
     echo Fixing ploidy for BANY${SCAFFOLD}...
     echo Time : `date +"%H:%M:%S"`
     /home/daernst/GWAS_Dave/Bioinformatics_programs/bcftools-1.9/bcftools \
@@ -46,7 +46,7 @@ do
     echo Time : `date +"%H:%M:%S"`
 
 
-    # Get biallelic sites on scaffold of interest
+    ### Get biallelic sites on scaffold of interest ###
     echo Getting biallelic sites for BANY${SCAFFOLD}...
     echo Time : `date +"%H:%M:%S"`
     /home/daernst/GWAS_Dave/Bioinformatics_programs/bcftools-1.9/bcftools view \
